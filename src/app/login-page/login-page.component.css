@@ -1,19 +1,26 @@
-.grid-container{
-display:grid;
-  grid-template-columns:auto auto ;
-  grid-gap:1px;
-   background-color:#2196F3;
-   padding:25px 25px 30px 25px;
-}
-.grid-container > div{
-  background-color:rgba(255,255,255,0.8) ;
-  text-align : center;
+.split{
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color:rgb(12, 6, 6);
+  margin: 40px 40px 40px 40px;
+  margin-bottom:40px;
+  transform: translate(10%,10%,10%,10%);
 
 }
-.right{
-  background-color:rgb(230, 227, 223);
+.left {
+  left: 0;
+  background-color: rgb(102, 137, 170);
+  text-align:center;
+
+
 }
-button{
-  background-color:blueviolet;
-  border-width:thick;
+.right {
+  right: 0;
+  background-color: rgb(191, 214, 218);
+  text-align:center;
 }
+
