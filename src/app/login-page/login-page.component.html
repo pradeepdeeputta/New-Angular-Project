@@ -2,13 +2,16 @@
   <div class="centered">
   <h1>Be in charge,From Just About <br> Anywhere</h1>
   <p>Engaged Employees.Action Data.Increased Productivity.</p><br><br>
-  <p>Don't have an account? Sing Up></p><br><br>
+  <p>Don't have an account? Sign Up></p><br><br>
   <p>Looking For:</p>
   <br>
-  <button type="button">Talenthire US</button>
-  <button type="button">Talenthire IND</button>
+  <button (click)='clickTalentHire()' >Talenthire US </button><br>
+  <button (click)='clickTalentHireIND() ' >Talenthire IND </button>
   <footer>
-    <p>Privacy Policy | Acceptable Use Policy | Anti Spam Policy</p>
+    <a href="/Privacy Policy/" >Privacy Policy</a> |
+    <a href="/Acceptable Use Policy/" >Acceptable Use Policy </a> |
+    <a href="/Anti Spam Policy/" > Anti Spam Policy</a>
+
   </footer>
 </div>
 </div>
@@ -21,11 +24,11 @@
   <br>
   <input style="color:dodgerblue;"id="username or email" type="text">
   <br>
-
-  <a href="#"> Forgot credentials ? </a> |
-
-  <a href="#"> Unblock</a>
-  <button style= "color:white; background-color: forestgreen;"   type="Next">Next</button>
+  <nav>
+    <a href="/forgot credentials/"> Forgot credentials ? </a> |
+    <a href="/unblock/"> Unblock</a>
+    <button style= "color:white; background-color: forestgreen;"   type="Next" routerLink="/next">Next</button>
+  </nav>
 
   <footer>
     <p>&copy2019 CEIPAL Corp.All rights reserved</p>
@@ -33,6 +36,8 @@
 </form>
 </div>
 </div>
+
+
 
 
 
