@@ -1,3 +1,11 @@
 <p>
   talenthire-us works!
 </p>
+<!-- <p>{{EMPLOYES}}</p> -->
+<h1>Employes</h1>
+<ol>
+  <li *ngFor= "let property of property">
+    <span>{{ property.place}}</span> {{property.name}}
+  </li>
+</ol>
+
