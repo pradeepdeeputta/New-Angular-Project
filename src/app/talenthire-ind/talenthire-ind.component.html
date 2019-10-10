@@ -1,3 +1,15 @@
 <p>
   talenthire-ind works!
 </p>
+<div *ngFor = "let post of posts" >
+  <ol>
+  <li>{{post.id}}</li>
+  <li>{{post.name}}</li>
+  <li>{{post.username}} </li>
+  <li>{{post.email}} </li>
+  <li>{{post.address.street}} </li>
+  <li>{{post.address.city}} </li>
+  <li>{{post.address.zipcode}} </li>
+
+</ol>
+</div>

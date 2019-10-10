@@ -18,7 +18,7 @@ export class LoginPageComponent implements OnInit {
 
   }
   clickTalentHireIND() {
-    this.router.navigate(['/talenthire-us']);
+    this.router.navigate(['/talenthire-ind']);
 
   }
 

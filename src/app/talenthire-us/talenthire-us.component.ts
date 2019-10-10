@@ -3,6 +3,8 @@ import { MyserviceService } from '../myservice.service';
 import { TalentHireData } from '../talenthiredata';
 
 
+
+
 @Component ({
   selector: 'app-talenthire-us',
   templateUrl: './talenthire-us.component.html',
@@ -21,7 +23,9 @@ export class TalenthireUsComponent implements OnInit {
 
   // }
   getemployes(): void {
-    this.property = this.myservice.getemployes();
+   this.myservice.getemployes()
+
+                    .subscribe(property => this.property = property );
   }
 
 

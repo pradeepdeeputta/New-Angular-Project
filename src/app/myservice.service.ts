@@ -7,8 +7,8 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class MyserviceService {
-  getemployes(): TalentHireData[] {
-    return EMPLOYES;
+  getemployes(): Observable<TalentHireData[]> {
+    return of (EMPLOYES);
 
   }
   // getEmployes(): Observable<TalentHireData[]> {
